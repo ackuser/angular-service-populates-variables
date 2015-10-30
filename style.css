@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    background: #eee;
+}
+
+.brand-app {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px solid #ddd;
+}
+
+.icon-box {
+    float: left;
+}
+
+.brand {
+    padding: 20px 0;
+}
+
+.brand h2 {
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.brand p {
+    margin: 0;
+}
+
+.brand .icon-box {
+    font-size: 60px;
+    padding-right: 20px;
+    color: #faa;
+}
+
+.mini-brand .icon-box {
+    display: inline-block;
+    padding-right: 10px;
+    color: #0ae;
+}
+
+.mini-brand h2,
+.mini-brand p {
+    font-size: 12px;
+    display: inline-block;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+}
+
+.brand-list {
+    padding-top: 10px;
+    margin-top: 30px;
+    border-top: 3px solid #eee;
+}
+
+.brand-list > h2 {
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.brand-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.brand-list li {
+    border-bottom: 1px dotted #eee;
+    padding: 5px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link data-require="font-awesome@*" data-semver="3.2.1" rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" />
+    <script data-require="jquery@*" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script data-require="angular.js@*" data-semver="1.2.0-rc3-nonmin" src="http://code.angularjs.org/1.2.0-rc.3/angular.js"></script>
+    <script data-require="angular-mocks@1.2.0-rc3" data-semver="1.2.0-rc3" src="http://code.angularjs.org/1.2.0-rc.3/angular-mocks.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <script src="BrandService.js"></script>
+    <script src="mock.js"></script>
+</head>
+
+<body ng-app="app">
+    <div ng-controller="MainController" class="brand-app">
+        <div ng-show="!(brand && list)">
+            Finding brands...
+        </div>
+        <div class="library" ng-show="brand && list">
+            <div class="brand" ng-show="brand">
+                <span class="icon-box"><i class="icon-brand"></i></span>
+                <h2>{{brand.title}}</h2>
+                <p>{{brand.description}}</p>
+            </div>
+            
+            <div class="brand-list">
+                <h2>Other brands:</h2>
+                <ul>
+                    <li class="mini-brand" ng-repeat="brand in list">
+                        <span class="icon-box"><i class="icon-brand"></i></span>
+                        <h2>{{brand.title}}</h2>
+                        <p>{{brand.description}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
